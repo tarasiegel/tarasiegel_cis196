@@ -1,0 +1,3 @@
+Link to heroku app: limitless-stream-7959.herokuapp.com/
+
+Problems/Comments: Added an HTML file with what is needed for the homework.  I made a form that has inputs for text, radio buttons and check boxs.  Also included links, buttons, images to see if people are my friend. Rails hates me.
