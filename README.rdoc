@@ -4,4 +4,8 @@ Link to heroku app: http://fast-lake-5173.herokuapp.com/
 HW 4
 Created a directory that is of Users that have a Name, Email address and Password.  I will eventually add more schemas to this to create a blogging platform.  I essentially want to add this as a feature/link from my personal website as a blog.  
 Therefore for a second schema I would like it to have:
-Title(: ) Date(:date) Published(:boolean) 
+
+
+Title(:string) | Author(:string) | Date(:date) | Published(:boolean) | Body(:text)
+A first post   | Tara            | 2013-10-1   | True                | 'Hi everyone, this is a first post....etc'
+
