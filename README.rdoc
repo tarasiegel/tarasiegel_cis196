@@ -7,5 +7,6 @@ Therefore for a second schema I would like it to have:
 
 
 Title(:string) | Author(:string) | Date(:date) | Published(:boolean) | Body(:text)
+
 A first post   | Tara            | 2013-10-1   | True                | 'Hi everyone, this is a first post....etc'
 
