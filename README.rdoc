@@ -1,3 +1,12 @@
-Link to heroku app: limitless-stream-7959.herokuapp.com/
+Link to heroku app: http://fast-lake-5173.herokuapp.com/
 
-Problems/Comments: Added an HTML file with what is needed for the homework.  I made a form that has inputs for text, radio buttons and check boxs.  Also included links, buttons, images to see if people are my friend. Rails hates me.
+
+HW 4
+Created a directory that is of Users that have a Name, Email address and Password.  I will eventually add more schemas to this to create a blogging platform.  I essentially want to add this as a feature/link from my personal website as a blog.  
+Therefore for a second schema I would like it to have:
+
+
+Title(:string) | Author(:string) | Date(:date) | Published(:boolean) | Body(:text)
+
+A first post   | Tara            | 2013-10-1   | True                | 'Hi everyone, this is a first post....etc'
+
