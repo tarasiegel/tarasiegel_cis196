@@ -1,5 +1,12 @@
 Link to heroku app: http://fast-lake-5173.herokuapp.com/
 
+HW 5
+
+Added a second directory called Post that has a title, author (which is associated with a user), date, and body text.
+Delete has some issues. 
+
+
+
 
 HW 4
 Created a directory that is of Users that have a Name, Email address and Password.  I will eventually add more schemas to this to create a blogging platform.  I essentially want to add this as a feature/link from my personal website as a blog.  
