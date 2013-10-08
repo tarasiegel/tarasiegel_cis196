@@ -9,11 +9,10 @@
 	<% @posts.each do |post| %>
 	<tr>
 		<td><%= post.title %></td>
-		<td><%= post.user.name %></td>
+		<td><%= post.user_id %></td>
 		<td><%= post.date %></td>
 		<td><%= post.body %></td>
-		<td><%= link_to "destroy post", post, method: :delete %>
-</td>
+		<td><%= button_to "destroy post", post_path(post), confirmation: "you sure?", method: :delete %> </td>
  		<td><%= link_to "show post", post_path(post.id) %></td>
  		<td><%= link_to "edit post", edit_post_path(post.id) %></td>
 	</tr>
