@@ -1,4 +1,5 @@
 TaraSiegelHomework2::Application.routes.draw do
+  resources :posts
   resources :users
 
   get "landing_pages/home"
