@@ -1,26 +1,38 @@
-<h1>New Post</h1>
-<%= form_for(@post) do |f| %>
-  <div class="field">
-    <p>Title:</p>
-    <%= f.text_field :title %>
-  </div>
-
-  <div class="field">
-    <p>User:</p>
-    <%= f.collection_select :user_id, User.all, :id, :name %>
-  </div>
-
-  <div class="dropdown">
-    <p>Date:</p>
-    <%= f.date_select :date %>
-  </div>
-
-  <div class="field">
-    <p>Body Text:</p>
-    <%= f.text_area :body %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+<h1 id="user-heading">New Post</h1>
+<div class="form-group" style="padding:5px 20px">
+  <%= form_for(@post) do |f| %>
+    <div class="field">
+      <span>Title:</span>
+      <%= f.text_field :title %>
+      <div class="error-message">
+        <% if @post.errors[:title].any? %>
+          <%= @post.errors[:title].join(", ") %>
+        <% end %> 
+      </div>
+    </div>
+    <br>
+    <div class="field">
+      <span style="padding-right: 5px">User:</span>
+      <%= f.collection_select :user_id, User.all, :id, :name %>
+    </div>
+    <br>
+    <div class="dropdown">
+      <span style="padding-right: 5px">Date:</span>
+      <%= f.date_select :date %>
+    </div>
+    <br>
+    <div class="field">
+      <span>Body Text</span><br>
+      <%= f.text_area(:body, :size => "120x20")%>
+      <div class="error-message">
+        <% if @post.errors[:body].any? %>
+          <%= @post.errors[:body].join(", ") %>
+        <% end %> 
+      </div>
+    </div>
+    <br>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
+</div>

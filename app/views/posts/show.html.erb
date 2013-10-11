@@ -1,6 +1,7 @@
-<div>
-  <h2><%= @post.title %></h2>
-  <p><%= @post.user_id %></p>
-  <p><%= @post.date %></p>
-  <p><%= @post.body %></p>
+<div class="post-style panel-default panel">
+  <h1 id="post-header" class="panel-heading">
+  	<%= @post.title %> - <%= @post.user_id %>
+  </h1>
+  <p id="post-date panel-title"><%= @post.date %></p>
+  <p id="post-body panel-body"><%= @post.body %></p>
 </div>

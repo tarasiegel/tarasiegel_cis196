@@ -1,17 +1,38 @@
-<%= form_for(@user) do |f| %>
- 	<div class="field">
-    		<p>name</p> 
-    		<%= f.text_field :name%>
-    	</div>
-    	<div class="field">
-    		<p>email</p> 
-     		<%= f.text_field :email%>
-    	</div>
-    	<div class="field">
-    		<p>password</p> 
-     		<%= f.text_field :password%>
-    	</div>
-    		<div class="actions">
-      		<%= f.submit %>
-    	</div>
-<% end %>
+<h1 id="user-heading">New User</h1>
+<div class="form-group" style="padding:20px">
+  <%= form_for(@user) do |f| %>
+   	<div class="field">
+      		<span>Name</span> 
+          <div class="error-message">
+            <% if @user.errors[:name].any? %>
+              <%= @user.errors[:name].join(", ") %>
+            <% end %> 
+          </div>
+          <%= f.text_field :name %>
+      	</div>
+        <br>
+      	<div class="field">
+      		<span>Email</span> 
+       		<div class="error-message">
+            <% if @user.errors[:email].any? %>
+              <%= @user.errors[:email].join(", ") %>
+            <% end %>
+          </div>
+          <%= f.text_field :email%>
+      	</div>
+        <br>
+      	<div class="field">
+      		<span>Password</span> 
+       		<div class="error-message">
+            <% if @user.errors[:password].any? %>
+              <%= @user.errors[:password].join(", ") %>
+            <% end %> 
+          </div>
+          <%= f.text_field :password %>
+      	</div>
+        <br>
+      	<div class="actions">
+        		<%= f.submit %>
+      	</div>
+  <% end %>
+</div>

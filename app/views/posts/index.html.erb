@@ -1,10 +1,13 @@
-<h1>Posts!</h1>
-<table>
-	<tr>
-		<td>Title</td> 
+<h1 id="user-heading">Posts Database</h1>
+<table class="table" id="user-table">
+ 	<tr>
+ 		<td>Title</td> 
 		<td>User</td>
 		<td>Date</td>
 		<td>Body</td>
+		<td>Show User</td>
+ 		<td>Edit User</td>
+ 		<td>Destroy User</td>
 	</tr>
 	<% @posts.each do |post| %>
 	<tr>
@@ -12,9 +15,9 @@
 		<td><%= post.user_id %></td>
 		<td><%= post.date %></td>
 		<td><%= post.body %></td>
-		<td><%= button_to "destroy post", post_path(post), confirmation: "you sure?", method: :delete %> </td>
  		<td><%= link_to "show post", post_path(post.id) %></td>
  		<td><%= link_to "edit post", edit_post_path(post.id) %></td>
+ 		<td><%= button_to "destroy post", post_path(post), confirmation: "you sure?", method: :delete %> </td>
 	</tr>
 <% end %>
 </table>

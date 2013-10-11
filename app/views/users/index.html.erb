@@ -1,17 +1,21 @@
-<table>
+<h1 id="user-heading">User Database</h1>
+<table class="table" id="user-table">
  	<tr>
  		<td>Name</td>
  		<td>Email</td>
  		<td>Password</td>
+ 		<td>Show User</td>
+ 		<td>Edit User</td>
+ 		<td>Destroy User</td>
  	</tr>
  	<% @users.each do |user| %>
  	<tr>
  		<td><%= user.name %></td>
  		<td><%= user.email %></td>
  		<td><%= user.password %></td>
- 		<td><%= button_to "destroy user", user_path(user), confirmation: "you sure?", method: :delete %> </td>
  		<td><%= link_to "show user", user_path(user.id) %></td>
  		<td><%= link_to "edit user", edit_user_path(user.id) %></td>
+ 		<td><%= button_to "destroy user", user_path(user), confirmation: "you sure?", method: :delete %> </td>
  	</tr>
  	<% end %>
 </table>

@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TaraSiegelHomework2</title>
+  <title>Tara Siegel CIS196</title>
+  <meta name="author" content="Tara Siegel">
+  <%= stylesheet_link_tag "bootstrap" %>
+  <%= stylesheet_link_tag "bootstrap-theme" %>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <%= javascript_include_tag "bootstrap" %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="../">TaraSiegel.com Blog</a>
+	</div>
+	<ul class="nav navbar-nav">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Users <b class="caret"></b></a>
+			<ul class="dropdown-menu">
+				<li><%= link_to 'New User', new_user_path %></li>
+				<li><%= link_to 'User Database', users_path %></li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="nav navbar-nav">
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Posts <b class="caret"></b></a>
+			<ul class="dropdown-menu">
+				<li><%= link_to 'New Post', new_post_path %></li>
+				<li><%= link_to 'All Posts', posts_path %></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
 
 <%= yield %>
 
