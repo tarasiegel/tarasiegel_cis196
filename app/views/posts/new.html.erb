@@ -12,10 +12,9 @@
     </div>
     <br>
     <div class="field">
-      <span style="padding-right: 5px">User:</span>
-      <%= f.collection_select :user_id, User.all, :id, :name %>
+      <%= f.hidden_field :user_id, :value =>current_user.id%>
     </div>
-    <br>
+        <br>
     <div class="dropdown">
       <span style="padding-right: 5px">Date:</span>
       <%= f.date_select :date %>

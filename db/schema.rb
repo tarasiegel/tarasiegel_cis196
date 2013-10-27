@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131008051337) do
+ActiveRecord::Schema.define(:version => 20131027175719) do
 
   create_table "posts", :force => true do |t|
     t.string   "title"
@@ -26,10 +26,14 @@ ActiveRecord::Schema.define(:version => 20131008051337) do
 
   create_table "users", :force => true do |t|
     t.string   "name"
-    t.string   "email"
     t.string   "password"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "access_token"
+    t.string   "oauth_token"
+    t.string   "oauth_expires_at"
   end
 
 end

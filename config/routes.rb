@@ -4,6 +4,12 @@ TaraSiegelHomework2::Application.routes.draw do
 
   get "landing_pages/home"
   root :to => 'landing_pages#home'
+
+  match 'auth/:provider/callback', to: 'sessions#create'
+  match 'auth/failure', to: redirect('/')
+  match 'signout', to: 'sessions#destroy', as: 'signout'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
