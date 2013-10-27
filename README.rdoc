@@ -2,7 +2,7 @@ Link to heroku app: http://tara-siegel-blog.herokuapp.com/
 
 HW 7
 
-Added Facebook login integration.
+Added Facebook login integration using OmniAuth Facebook gem.
 Ideally I want to be able to have two types of users.  Ones that can post and ones that can comment on posts.  The login page will have all of the blog posts from all users or you can filter by a particular user.
 
 
