@@ -12,16 +12,6 @@
         </div>
         <br>
         <div class="field">
-          <span>Email</span> 
-          <div class="error-message">
-            <% if @user.errors[:email].any? %>
-              <%= @user.errors[:email].join(", ") %>
-            <% end %>
-          </div>
-          <%= f.text_field :email%>
-        </div>
-        <br>
-        <div class="field">
           <span>Password</span> 
           <div class="error-message">
             <% if @user.errors[:password].any? %>
