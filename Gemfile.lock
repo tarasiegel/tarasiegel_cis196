@@ -41,6 +41,8 @@ GEM
     execjs (2.0.1)
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
+    filepicker-rails (1.0.0)
+      rails (>= 3.2)
     hashie (2.0.5)
     hike (1.2.3)
     httpauth (0.2.0)
@@ -125,6 +127,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  filepicker-rails
   jquery-rails
   omniauth
   omniauth-facebook (= 1.4.0)
