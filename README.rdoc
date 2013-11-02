@@ -1,10 +1,16 @@
-Link to heroku app: http://fast-lake-5173.herokuapp.com/
+Link to heroku app: http://tara-siegel-blog.herokuapp.com/
+
+HW 7
+
+Added Facebook login integration using OmniAuth Facebook gem.
+Ideally I want to be able to have two types of users.  Ones that can post and ones that can comment on posts.  The login page will have all of the blog posts from all users or you can filter by a particular user.
+
+
 
 HW 5
 
 Added a second directory called Post that has a title, author (which is associated with a user), date, and body text.
 Delete has some issues. 
-
 
 
 
