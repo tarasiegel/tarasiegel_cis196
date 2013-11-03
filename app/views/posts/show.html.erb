@@ -3,5 +3,7 @@
   	<%= @post.title %> - <%= @post.user_id %>
   </h1>
   <p id="post-date panel-title"><%= @post.date %></p>
+  <%= filepicker_image_tag @post.filepicker_url, w: 400, h: 400, fit: 'clip' %>
+
   <p id="post-body panel-body"><%= @post.body %></p>
 </div>

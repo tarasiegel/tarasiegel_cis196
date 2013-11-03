@@ -34,4 +34,8 @@ TaraSiegelHomework2::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.filepicker_rails.api_key = 'A688hfgZ8T7mmCeeR9bHiz'
+  #, 'TLSVO7FJYBCNJF7OJ5XD3KZ3UE'
+
 end

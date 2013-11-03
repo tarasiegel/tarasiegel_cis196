@@ -11,15 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131027211341) do
+ActiveRecord::Schema.define(:version => 20131103012402) do
 
   create_table "posts", :force => true do |t|
     t.string   "title"
     t.integer  "user_id"
     t.date     "date"
     t.text     "body"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.string   "image_id"
+    t.string   "filepicker_url"
   end
 
   add_index "posts", ["user_id"], :name => "index_posts_on_user_id"
