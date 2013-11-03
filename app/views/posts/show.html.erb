@@ -1,9 +1,8 @@
-<div class="post-style panel-default panel">
-  <h1 id="post-header" class="panel-heading">
-  	<%= @post.title %> - <%= @post.user_id %>
-  </h1>
-  <p id="post-date panel-title"><%= @post.date %></p>
-  <%= filepicker_image_tag @post.filepicker_url, w: 400, h: 400, fit: 'clip' %>
+<div class="post-style">
+  <h1 id="post-header"><%= @post.title %></h1>
+  <h3 id="post-date">By: <%= @post.user_id %></h3>
+  <p id="post-date">Posted on: <%= @post.date %></p>
+  <%= filepicker_image_tag @post.filepicker_url, h: 300, fit: 'clip' %>
 
-  <p id="post-body panel-body"><%= @post.body %></p>
+  <p id="post-body"><%= @post.body %></p>
 </div>

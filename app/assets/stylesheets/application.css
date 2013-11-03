@@ -12,6 +12,13 @@
  *= require_tree .
 */
 
+body {
+	background-image: url('norwegian_rose.png');
+	background-size: auto;
+	background-position: center;
+	background-repeat: repeat;
+}
+
 .error-message {
 	color: red;
 }
@@ -21,23 +28,46 @@
 }
 
 #user-heading {
-	margin: 20px 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 60px;
+	color: #000000;
 }
 
 .post-style {
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%;
+	width: 70%;
+	background: #fff;
+	background: -moz-linear-gradient(top, #fff 0%, #ccc 100%);
+	background: -webkit-gradient(linear, center top, center bottom, color-stop(0%,#fff), color-stop(100%,#ccc));
+	background: -webkit-linear-gradient(top, #fff 0%,#ccc 100%);
+	background: -o-linear-gradient(top, #fff 0%,#ccc 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#cccccc 100%);
+	background: linear-gradient(top, #fff 0%,#ccc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 );
+	border-radius: .6em;
+	box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.4);
+	margin: 1em auto;
+	padding: 1em;
+	
+}
+
+.post-style img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 #post-header {
-
+	text-align: center;
 }
 
 #post-date {
-
+	text-align: center;
 }
 
-#post-body {
-
+.post-body {
 }
+

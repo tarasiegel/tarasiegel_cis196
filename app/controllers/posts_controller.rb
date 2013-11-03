@@ -28,6 +28,10 @@ class PostsController < ApplicationController
   	@post = Post.find(params[:id])
   end
 
+  def showAll
+    @posts = Post.all
+  end
+
   def update
   	@post = Post.find(params[:id])
   	if @post.update_attributes(params[:post])

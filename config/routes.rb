@@ -3,7 +3,8 @@ TaraSiegelHomework2::Application.routes.draw do
   resources :users
 
   get "landing_pages/home"
-  root :to => 'landing_pages#home'
+  get "posts/showAll"
+  root :to => 'posts#showAll'
 
   match 'auth/:provider/callback', to: 'sessions#create'
   match 'auth/failure', to: redirect('/')
