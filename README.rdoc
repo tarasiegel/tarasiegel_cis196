@@ -1,5 +1,11 @@
 Link to heroku app: http://tara-siegel-blog.herokuapp.com/
 
+HW 8 
+
+Added Ink - Heroku add on, which is essentially a filepicker so you can add a image to blog posts.
+Also styled the blog posts a little to match my website.  Not final layout yet though 
+
+
 HW 7
 
 Added Facebook login integration using OmniAuth Facebook gem.
