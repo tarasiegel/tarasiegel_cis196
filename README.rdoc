@@ -1,5 +1,10 @@
 Link to heroku app: http://tara-siegel-blog.herokuapp.com/
 
+HW 9
+
+Added a scope and querying options in my app, you can now only see the posts in 'Manage Posts' that you authored.  Also added in Facebook Comments on the posts.  Also the posts are now ordered so the latest post is on top in the main page. 
+
+
 HW 8 
 
 Added Ink - Heroku add on, which is essentially a filepicker so you can add a image to blog posts.
