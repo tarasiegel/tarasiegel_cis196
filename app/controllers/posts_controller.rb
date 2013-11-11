@@ -29,7 +29,7 @@ class PostsController < ApplicationController
   end
 
   def showAll
-    @posts = Post.order(date: :asc)
+    @posts = Post.order("date DESC")
   end
 
   def update
