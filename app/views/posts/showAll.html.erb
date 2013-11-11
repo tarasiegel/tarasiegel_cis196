@@ -4,7 +4,7 @@
 
 <% @posts.each do |post| %>	
 	<div class="post-style">
-	  <h1 id="post-header"><%= post.title %></h1>
+	  <h1 id="post-header"><%= link_to post.title, post_path(post.id) %></h1>
 	  <h3 id="post-date">By: <%= post.user.name %></h3>
 	  <p id="post-date">Posted on: <%= post.date %></p>
 	  <% if !post.filepicker_url.nil? %>
