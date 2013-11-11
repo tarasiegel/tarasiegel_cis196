@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-  	@posts = Post.all
+  	@posts = Post.where(user_id: current_user)
   end
 
   def new
@@ -29,7 +29,7 @@ class PostsController < ApplicationController
   end
 
   def showAll
-    @posts = Post.all
+    @posts = Post.order(date: :asc)
   end
 
   def update
