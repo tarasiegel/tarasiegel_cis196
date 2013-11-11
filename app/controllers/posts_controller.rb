@@ -49,6 +49,12 @@ class PostsController < ApplicationController
   	end
   end
 
+  def comment
+    Post.find(params[:id]).comments.create(params[:comment])
+    flash[:notice] = "Added your comment"
+    redirect_to post_path(@post.id)
+  end
+
   def destroy
   	Post.find(params[:id]).destroy
   	redirect_to posts_path
