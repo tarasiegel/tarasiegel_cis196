@@ -35,6 +35,14 @@ body {
 	color: #000000;
 }
 
+#blog-heading {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 60px;
+	color: #000000;
+}
+
 .post-style {
 	margin-left: auto;
 	margin-right: auto;

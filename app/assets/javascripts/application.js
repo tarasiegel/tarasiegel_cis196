@@ -13,3 +13,16 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(function() {
+	$('#blog-heading').hover(function(){
+		$('#blog-heading').css("color", "purple").animate({fontSize: '60px'}, 1500);
+	});
+
+	$('#post-date').hover(function(){
+		$('#post-date').css("color", "purple");
+	});
+
+	$('#blog-heading').html('Welcome to blog.').animate({
+    fontSize: '80px'}, 1500);
+}); 

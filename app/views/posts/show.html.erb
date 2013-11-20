@@ -2,9 +2,9 @@
   <h1 id="post-header"><%= @post.title %></h1>
   <h3 id="post-date">By: <%= @post.user.name %></h3>
   <p id="post-date">Posted on: <%= @post.date %></p>
-  <% if !@post.filepicker_url.nil? %>
+  <div class="images"><% if !@post.filepicker_url.nil? %>
   	<%= filepicker_image_tag @post.filepicker_url, h: 300, fit: 'clip' %>
-  <% end %>
+  <% end %></div>
 
   <p id="post-body"><%= @post.body %></p>
 
