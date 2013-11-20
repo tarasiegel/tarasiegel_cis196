@@ -1,5 +1,10 @@
 Link to heroku app: http://tara-siegel-blog.herokuapp.com/
 
+HW 10
+
+I didn't add too much jquery other than the size of the "Welcome to blog" getting bigger and smaller.  I plan on adding more jquery to the site once I have a better grasp as to what I plan to do with this site.  
+
+
 HW 9
 
 Added a scope and querying options in my app, you can now only see the posts in 'Manage Posts' that you authored.  Also added in Facebook Comments on the posts.  Also the posts are now ordered so the latest post is on top in the main page. 
