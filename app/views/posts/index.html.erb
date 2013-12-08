@@ -1,14 +1,17 @@
 <h1 id="user-heading">Posts Database</h1>
-<table class="table" id="user-table">
- 	<tr>
- 		<td>Title</td> 
-		<td>User</td>
-		<td>Date</td>
-		<td>Body</td>
-		<td>Show Post</td>
- 		<td>Edit Post</td>
- 		<td>Destroy Post</td>
-	</tr>
+<table id="user-table">
+ 	<thead>
+	 	<tr>
+	 		<th>Title</th> 
+			<th>User</th>
+			<th>Date</th>
+			<th>Body</th>
+			<th>Show Post</th>
+	 		<th>Edit Post</th>
+	 		<th>Destroy Post</th>
+		</tr>
+	</thead>
+	<tbody>
 	<% @posts.each do |post| %>
 	<tr>
 		<td><%= post.title %></td>
@@ -19,5 +22,6 @@
  		<td><%= link_to "edit post", edit_post_path(post.id) %></td>
  		<td><%= button_to "destroy post", post_path(post), confirmation: "you sure?", method: :delete %> </td>
 	</tr>
-<% end %>
+	<% end %>
+	</tbody>
 </table>

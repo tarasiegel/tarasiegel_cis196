@@ -1,18 +1,22 @@
 <h1 id="user-heading">User Database</h1>
-<table class="table" id="user-table">
- 	<tr>
- 		<td>Name</td>
- 		<td>Show User</td>
- 		<td>Edit User</td>
- 		<td>Destroy User</td>
- 	</tr>
- 	<% @users.each do |user| %>
- 	<tr>
- 		<td><%= user.name %></td>
- 		<td><%= link_to "show user", user_path(user.id) %></td>
- 		<td><%= link_to "edit user", edit_user_path(user.id) %></td>
- 		<td>nope</td>
- 		<!--<td><%= button_to "destroy user", user_path(user), confirmation: "you sure?", method: :delete %> </td>-->
- 	</tr>
- 	<% end %>
+<table id="user-table">
+	<thead>
+	 	<tr>
+	 		<th>Name</th>
+	 		<th>Show User</th>
+	 		<th>Edit User</th>
+	 		<th>Destroy User</th>
+	 	</tr>
+	 </thead>
+	<tbody>
+	 	<% @users.each do |user| %>
+	 	<tr>
+	 		<td><%= user.name %></td>
+	 		<td><%= link_to "show user", user_path(user.id) %></td>
+	 		<td><%= link_to "edit user", edit_user_path(user.id) %></td>
+	 		<td>nope</td>
+	 		<!--<td><%= button_to "destroy user", user_path(user), confirmation: "you sure?", method: :delete %> </td>-->
+	 	</tr>
+ 		<% end %>
+ 	</tbody>
 </table>

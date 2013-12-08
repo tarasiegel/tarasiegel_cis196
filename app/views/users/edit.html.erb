@@ -1,5 +1,5 @@
 <h1 id="user-heading">Edit User</h1>
-<div class="form-group" style="padding:20px">
+<div class="form-group formFormat" style="padding:20px">
   <%= form_for(@user) do |f| %>
     <div class="field">
           <span>Name</span> 
@@ -21,7 +21,7 @@
           <%= f.text_field :password %>
         </div>
         <br>
-        <div class="actions">
+        <div class="button large">
             <%= f.submit %>
         </div>
   <% end %>

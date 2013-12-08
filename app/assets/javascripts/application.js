@@ -12,9 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require foundation
+//= require_tree .  
 
 $(function() {
+	$(document).foundation();	
 	$('#blog-heading').hover(function(){
 		$('#blog-heading').css("color", "purple").animate({fontSize: '60px'}, 1500);
 	});
@@ -25,4 +27,4 @@ $(function() {
 
 	$('#blog-heading').html('Welcome to blog.').animate({
     fontSize: '80px'}, 1500);
-}); 
+});
