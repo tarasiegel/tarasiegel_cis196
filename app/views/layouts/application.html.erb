@@ -8,6 +8,7 @@
    <!-- <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>-->
     <%= javascript_include_tag "jquery" %>
     <%= stylesheet_link_tag "foundation.min" %>
+    <%= stylesheet_link_tag "jquery.pageslide" %>
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= csrf_meta_tags %>
     <%= filepicker_js_include_tag %>
@@ -31,28 +32,30 @@
       </ui>
       <section class="top-bar-section">
         <ul class="left">
-          <li><%= link_to 'User Database', users_path %></li>
-          <li class="has-dropdown">
-            <a href="#">Posts</a>
-            <ul class="dropdown">
-              <li><%= link_to 'New Post', new_post_path %></li>
-              <li><%= link_to 'Manage Posts', posts_path %></li>
-            </ul>
-          </li>
+          <li><%= link_to 'Create New Post', new_post_path %></li>
+          <li><%= link_to 'Manage Posts', posts_path %></li>
+          <li><a href="#modal" class="second">Blog Information</a></li>
         </ul>
         <ul class="right">
           <% if current_user %>
             <li><a href="#">Signed in as <strong><%= current_user.name %></strong></a></li>
             <li><%= link_to 'Logout', signout_path, id: "sign_out" %></li>
-          <% else %>
+          <% else %> 
             <li><%= link_to 'Login with Facebook', "/auth/facebook", id: "sign_in" %></li>
           <% end %>
         </ul>
       </section>
     </nav>
+    <div id="modal">
+            <h2>So Ruby.</h2>
+            <p>This site was coded in Ruby on Rails for CIS196, Ruby on Rails development.  The main functionality of this site is a blog.  Users can sign in with Facebook to create and manage blog posts.  Readers are able to view all of the blogposts along with commenting on them using Facebook comments.  I used jquery for this along with Foundation as part of the css styling.  The Rudy gem I used OmniAuth which allowed me to do Facebook login.  I used Filepicker Heroku add-on to enable the writers to include photos. To view the source code for this project along with a more detailed description of this project please visit my github.</p>
+            <p><a href="https://github.com/tarasiegel/tarasiegel_cis196" target="_blank"><img src="http://3.bp.blogspot.com/-KMTE_2WZ9j8/UpYoJ92a5XI/AAAAAAAAAgM/mzGZmmEKD9w/s1600/Octocat.png" width="50px"></a></p>
+            <p><a id="close" href="javascript:$.pageslide.close()">Close</a></p>
+        </div>
     <%= yield %>
     <%= javascript_include_tag "foundation.min" %>
-    <%= javascript_include_tag "modernizr"%>
+    <%= javascript_include_tag "modernizr" %>
+    <%= javascript_include_tag "jquery.pageslide.min" %>
     <%= javascript_include_tag "application" %>
 
   </body>

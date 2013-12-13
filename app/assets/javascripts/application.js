@@ -17,14 +17,9 @@
 
 $(function() {
 	$(document).foundation();	
-	$('#blog-heading').hover(function(){
-		$('#blog-heading').css("color", "purple").animate({fontSize: '60px'}, 1500);
-	});
 
-	$('#post-date').hover(function(){
-		$('#post-date').css("color", "purple");
-	});
+	$('#blog-heading').html("Such Blog.").animate({
+    fontSize: '60px'}, 1500);
 
-	$('#blog-heading').html('Welcome to blog.').animate({
-    fontSize: '80px'}, 1500);
+    $(".second").pageslide({ direction: "left", modal: true});
 });

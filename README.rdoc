@@ -1,4 +1,25 @@
-Link to heroku app: http://tara-siegel-blog.herokuapp.com/
+Link to heroku site: http://tara-siegel-blog.herokuapp.com/
+
+Final Readme
+
+This site was coded in Ruby on Rails for CIS196, Ruby on Rails development.  The main functionality of this site is a blog.  Users can sign in with Facebook to create and manage blog posts.  Readers are able to view all of the blogposts along with commenting on them using Facebook comments.  
+
+Styling: CSS, Foundation and JQuery
+
+JQuery Used For: Zooming in on title, showing blog information
+
+Ruby Gem: OmniAuth which allowed me to do Facebook login and authentication. https://github.com/mkdynamic/omniauth-facebook
+
+Heroku Gem: Ink's Filepicker Heroku add-on to enable the writers to include photos using a very pretty UI to choose photos from a variety of resources. https://addons.heroku.com/filepicker
+
+Validations: There are some validations when creating a blog post to make sure theres something there and at least a few words long. 
+
+Scopes: You can only manage the posts that you are an author to.
+
+Directories: There is a user and a post database with each post belonging to a specific user. 
+
+
+
 
 HW 10
 
